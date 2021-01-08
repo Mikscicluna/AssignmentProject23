@@ -447,11 +447,12 @@ GameObject:
   - component: {fileID: 515454494}
   - component: {fileID: 515454493}
   - component: {fileID: 515454492}
-  - component: {fileID: 515454491}
   - component: {fileID: 515454496}
+  - component: {fileID: 515454491}
+  - component: {fileID: 515454497}
   m_Layer: 0
   m_Name: Ghost
-  m_TagString: Ghost
+  m_TagString: DestroyObject
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -465,12 +466,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 515454490}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: da85040e10ecab34587a72f9e176d233, type: 3}
+  m_Script: {fileID: 11500000, guid: 9f6dafd8892aa2d42959bce41ba078cb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 7
-  dirY: 0
-  dirZ: 0
 --- !u!135 &515454492
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -556,11 +554,26 @@ Rigidbody:
   m_Mass: 1
   m_Drag: 0
   m_AngularDrag: 0
-  m_UseGravity: 1
+  m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &515454497
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 515454490}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da85040e10ecab34587a72f9e176d233, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 0
+  dirY: 0
+  dirZ: 0
 --- !u!1 &608480869
 GameObject:
   m_ObjectHideFlags: 0
@@ -1032,7 +1045,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6441103d23669a942a3c0c92a43c161f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  x: ' '
+  x: Player
   _speed: 7
 --- !u!54 &875045465
 Rigidbody:
