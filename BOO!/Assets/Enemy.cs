@@ -33,6 +33,7 @@ public class Enemy : MonoBehaviour
         if(other.tag == "Ghost")
         {
             Destroy(this.gameObject);
+            //Destroy(childobject along with parent);
         }
     }
     

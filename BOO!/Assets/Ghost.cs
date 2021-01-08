@@ -16,15 +16,24 @@ public class Ghost : MonoBehaviour
     void Update() {
       speed = 7f;
       if(Input.GetAxis("Horizontal")<0){
-        direction = Vector2.left; //changing the direction of pacman to left
+        direction = Vector2.left; //changing the direction of ghost to left
       }
         
       if(Input.GetAxis("Horizontal")>0){
-        direction = Vector2.right; //changing the direction of pacman to right
-       }
+        direction = Vector2.right; //changing the direction of ghost to right
+      }
+
+    void OnTriggerEnter2D(Collider2D other)
+    {
+      if(other.tag == "Flashlight")
+      {
+        Destroy(this.gameObject);
+      }
+    }
 
       rb.velocity = direction*speed;
-       
+
+      
       /*dirX = Input.GetAxis("Horizontal") * moveSpeed;
       dirZ = Input.GetAxis("Vertical") * moveSpeed;*/
     }
