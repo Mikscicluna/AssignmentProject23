@@ -44,6 +44,9 @@ public class Ghost : MonoBehaviour
 
       rb.velocity = direction*speed;
       
+<<<<<<< Updated upstream:BOO!/Assets/Ghost.cs
+>>>>>>> Stashed changes:BOO!/Assets/Scripts/Ghost.cs
+=======
 >>>>>>> Stashed changes:BOO!/Assets/Scripts/Ghost.cs
       
       /*dirX = Input.GetAxis("Horizontal") * moveSpeed;

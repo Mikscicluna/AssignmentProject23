@@ -135,6 +135,10 @@ GameObject:
   - component: {fileID: 421481912}
   - component: {fileID: 421481915}
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+=======
+  - component: {fileID: 421481916}
+>>>>>>> Stashed changes
 =======
   - component: {fileID: 421481916}
 >>>>>>> Stashed changes
@@ -230,10 +234,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   m_Script: {fileID: 11500000, guid: 019e4bf54e9ac094db2b14e52d61a9e0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 =======
+=======
+>>>>>>> Stashed changes
   m_Script: {fileID: 11500000, guid: 8603d1b3ddc37a649a903aa9279b3df0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
@@ -260,6 +267,9 @@ NavMeshAgent:
   m_BaseOffset: 1.0000002
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 --- !u!1 &469842858
 GameObject:
@@ -715,8 +725,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   x: ' '
   _speed: 7
+=======
+  goal: {fileID: 515454495}
+>>>>>>> Stashed changes
 =======
   goal: {fileID: 515454495}
 >>>>>>> Stashed changes
