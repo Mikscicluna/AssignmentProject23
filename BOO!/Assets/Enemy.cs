@@ -24,6 +24,7 @@ public class Enemy : MonoBehaviour
         {
             //transform.position = teleport
             float randomX = Random.Range(-4.15f,4.15f);
+            _speed+=1f;
             transform.position = new Vector3(randomX,0.6f,6.45f);
         }
         //change the position to teleport from the top of the screen at random position on x axis

@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Ghost : MonoBehaviour
 {
@@ -28,6 +29,12 @@ public class Ghost : MonoBehaviour
       /*dirX = Input.GetAxis("Horizontal") * moveSpeed;
       dirZ = Input.GetAxis("Vertical") * moveSpeed;*/
     }
+      void OnCollisionEnter(Collision other){
+        if(other.gameObject.tag == "Enemy"){
+          Destroy(this.gameObject);
+          SceneManager.LoadScene("Game Over");
+        }
+      }
     /*private void FixedUpdate() {
       {
         rb.velocity = new Vector3(rb.velocity.x, dirY, dirZ);
