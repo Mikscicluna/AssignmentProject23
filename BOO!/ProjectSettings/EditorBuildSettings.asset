@@ -17,13 +17,4 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Options.unity
     guid: 7a07837d603e2224093f8e9a92413659
-  - enabled: 1
-    path: Assets/Scenes/Visuals.unity
-    guid: 0daa979a75df4414899ce88a659bae2a
-  - enabled: 1
-    path: Assets/Scenes/Audio.unity
-    guid: 926632a616ef5594391fb4ebec6bbb0e
-  - enabled: 1
-    path: Assets/Scenes/Game Over.unity
-    guid: 690f4b337e099a74eb5e5d48b7b82712
   m_configObjects: {}
