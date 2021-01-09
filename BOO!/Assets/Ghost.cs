@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Ghost : MonoBehaviour
 {
@@ -9,6 +10,9 @@ public class Ghost : MonoBehaviour
     public float speed;
     public float dirY, dirZ;
 //Use below for initialization
+    void OnDestroy() {
+        SceneManager.LoadScene("Game Over");
+    }
     void Start() {
       rb = GetComponent<Rigidbody>();
     }
@@ -20,6 +24,7 @@ public class Ghost : MonoBehaviour
       }
         
       if(Input.GetAxis("Horizontal")>0){
+<<<<<<< Updated upstream:BOO!/Assets/Ghost.cs
         direction = Vector2.right; //changing the direction of ghost to right
       }
 
@@ -33,6 +38,13 @@ public class Ghost : MonoBehaviour
 
       rb.velocity = direction*speed;
 
+=======
+        direction = Vector2.right; //changing the direction of pacman to right
+        }
+
+      rb.velocity = direction*speed;
+      
+>>>>>>> Stashed changes:BOO!/Assets/Scripts/Ghost.cs
       
       /*dirX = Input.GetAxis("Horizontal") * moveSpeed;
       dirZ = Input.GetAxis("Vertical") * moveSpeed;*/

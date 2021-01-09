@@ -1,4 +1,4 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -11,7 +11,7 @@ public class Enemy : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        sc = GetComponent<SphereCollider>();
+        //sc = GetComponent<SphereCollider>();
     }
 
     // Update is called once per frame
@@ -24,19 +24,21 @@ public class Enemy : MonoBehaviour
         {
             //transform.position = teleport
             float randomX = Random.Range(-4.15f,4.15f);
+            _speed+=1f;
             transform.position = new Vector3(randomX,0.6f,6.45f);
+            
         }
         //change the position to teleport from the top of the screen at random position on x axis
     }
-    void OnTriggerEnter2D(Collider2D other) 
+   /* void OnTriggerEnter2D(Collider2D other) 
     {
         if(other.tag == "Ghost")
         {
             Destroy(this.gameObject);
             //Destroy(childobject along with parent);
         }
-    }
-    
+    }*/
+        
     /*public void onCollisionEnter2D(Collision2D collision){
             destroyEnemy(collision,x);
     }
