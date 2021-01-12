@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-public class Instructions : MonoBehaviour
+public class Options : MonoBehaviour
 {
     public bool isBack;
 
