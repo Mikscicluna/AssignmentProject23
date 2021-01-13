@@ -5,9 +5,6 @@ using UnityEngine.SceneManagement;
 public class Options : MonoBehaviour
 {
     public bool isBack;
-    public bool isVisuals;
-
-    public bool isAudio;
 
     // Start is called before the first frame update
     void OnMouseUp()
@@ -16,23 +13,5 @@ public class Options : MonoBehaviour
         {
             SceneManager.LoadScene("MainMenu");
         }
-        if (isVisuals)
-        {
-            SceneManager.LoadScene("Visuals");
-        }
-        if (isAudio)
-        {
-            SceneManager.LoadScene("Audio");
-        }
-    }
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 }

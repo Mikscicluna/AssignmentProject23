@@ -340,8 +340,9 @@ GameObject:
   - component: {fileID: 828451107}
   - component: {fileID: 828451106}
   - component: {fileID: 828451105}
+  - component: {fileID: 828451109}
   m_Layer: 0
-  m_Name: Game Settings
+  m_Name: Instructions
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -517,6 +518,21 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!114 &828451109
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 828451103}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1aeb03dcf095d4f41b109104e5ed0deb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isBack: 0
+  isVisuals: 0
+  isAudio: 0
 --- !u!1 &1173986616
 GameObject:
   m_ObjectHideFlags: 0
