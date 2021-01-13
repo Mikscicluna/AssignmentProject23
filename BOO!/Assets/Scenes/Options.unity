@@ -326,6 +326,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isBack: 1
   isVisuals: 0
+  isInstructions: 0
   isAudio: 0
 --- !u!1 &828451103
 GameObject:
@@ -532,6 +533,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isBack: 0
   isVisuals: 0
+  isInstructions: 1
   isAudio: 0
 --- !u!1 &1173986616
 GameObject:
@@ -738,6 +740,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isBack: 0
   isVisuals: 1
+  isInstructions: 0
   isAudio: 0
 --- !u!1 &1193416490
 GameObject:
@@ -1213,4 +1216,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isBack: 0
   isVisuals: 0
+  isInstructions: 0
   isAudio: 1
