@@ -7,7 +7,7 @@ public class OptionsMenu : MonoBehaviour
 {
     public bool isBack;
     public bool isVisuals;
-
+    public bool isInstructions;
     public bool isAudio;
 
     // Start is called before the first frame update
