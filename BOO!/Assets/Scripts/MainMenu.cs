@@ -10,7 +10,7 @@ public class MainMenu : MonoBehaviour
     //Declaring all the buttons as boolean to check which they are
     public bool isPlay;
     public bool isOptions;
-
+    public bool isExit;
     public bool isLeaderboards;
 
     void OnMouseUp()
@@ -26,6 +26,11 @@ public class MainMenu : MonoBehaviour
         if (isLeaderboards)
         {
             SceneManager.LoadScene("Leaderboards");
+        }
+        if(isExit)
+        {
+            Application.Quit();
+            Debug.Log("Exiting Game...");
         }
     }
     void Start()
