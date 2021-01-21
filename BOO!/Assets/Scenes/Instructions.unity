@@ -1020,6 +1020,8 @@ GameObject:
   - component: {fileID: 1209518257}
   - component: {fileID: 1209518256}
   - component: {fileID: 1209518255}
+  - component: {fileID: 1209518260}
+  - component: {fileID: 1209518259}
   m_Layer: 0
   m_Name: Text (TMP)
   m_TagString: Untagged
@@ -1184,6 +1186,32 @@ RectTransform:
   m_AnchoredPosition: {x: 30.2, y: 25}
   m_SizeDelta: {x: 20, y: 5}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1209518259
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1209518254}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b98a8f1fa9ee53e48a297017b0ce84ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isBack: 1
+--- !u!65 &1209518260
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1209518254}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.1228943, y: 2.2590284, z: 0}
+  m_Center: {x: -8.947155, y: 1.1295142, z: 1.8405111e-15}
 --- !u!1 &1389887053
 GameObject:
   m_ObjectHideFlags: 0
